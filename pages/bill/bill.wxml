@@ -1,0 +1,15 @@
+<!--pages/bill/bill.wxml-->
+  <view wx:for="{{list}}">
+    <view class="list" >
+      <view>{{item.FD_Name}}</view>
+      <view class="num">数量{{item.count}}</view>
+    </view>
+    <!-- <view class="btn">
+     <button bindtap="onPlus" data-id="{{item.FD_ID}}">+</button>
+    </view>  -->
+    <input-number 
+     init="{{item.count}}"
+     bind:changeNum = "changeNum"
+      data-id="{{item.FD_ID}}"
+     />
+  </view>

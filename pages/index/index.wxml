@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="btn">
+   <button bindtap="onScan">扫码结账</button>
+  </view> 
+  <view class="btn">
+   <button bindtap="onBook">预订</button>
+  </view> 
+  <view wx:for="{{list}}" wx:key="index" >
+    <view class="list" >
+      <view>{{item.FD_Name}}</view>
+      <view class="num">数量{{item.count}}</view>
+    </view>
+    <view class="btn">
+     <!-- <button bindtap="onPlus" data-id="{{item.FD_ID}}">+</button> -->
+     <input-number 
+     init="{{item.count}}"
+     bind:changeNum = "changeNum"
+      data-id="{{item.FD_ID}}"
+     />
+    </view> 
+  </view>
+   
+  <!-- <view>
+   <button bindtap="goLog">日志</button>
+  </view> -->
+  <!-- <view>
+  <button bindtap="goWorkers">worker</button>
+  </view> -->
+</view>

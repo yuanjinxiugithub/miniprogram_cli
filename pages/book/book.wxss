@@ -1,0 +1,19 @@
+/* pages/book/book.wxss */
+.book{
+  position: relative;
+}
+
+.img{
+  width: 100%;
+}
+
+.react{
+position: absolute;
+border: 1px solid rgb(219, 241, 245);
+top: 220.5px;
+left: 30.5px;
+height: 91rpx;
+width: 54rpx;
+border-radius: 6px;
+}
+

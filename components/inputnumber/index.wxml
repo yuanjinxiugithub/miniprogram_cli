@@ -1,0 +1,5 @@
+<view class="input">
+<button bindtap="bindSub" disabled="{{val<min}}">-</button>
+<input value="{{val}}" class="input"></input>
+<button bindtap="bindAdd" disabled="{{val==max}}">+</button>
+</view>

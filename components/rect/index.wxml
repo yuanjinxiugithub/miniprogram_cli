@@ -1,0 +1,7 @@
+<view 
+class="rect {{active?'active':''}}"
+style="width:{{width}}rpx;height:{{height}}rpx;top:{{x}}px;left:{{y}}px;border-color:{{borderColor}};transform:{{transform}};border-radius:{{borderRadius}}px;"
+bindtap="bindClick"
+data-id="{{name}}"
+>
+</view>

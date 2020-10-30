@@ -1,0 +1,19 @@
+<!--pages/book/book.wxml-->
+<view class="book">
+   <image class="img" src="../../assets/bg.png" mode="widthFix" ></image>
+   <rect 
+    wx:for="{{setList}}"
+    wx:key="id"
+    x="{{item.x}}"
+    y="{{item.y}}"
+    height="{{item.height}}"
+    width="{{item.width}}"
+    id="{{item.id}}"
+    name="{{item.name}}"
+    transform="{{item.transform}}"
+    bind:changeSet="changeSet"
+    active="{{selectID==item.name}}"
+    borderRadius="{{item.borderRadius}}"
+
+   />
+</view>

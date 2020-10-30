@@ -1,0 +1,9 @@
+/* pages/bill/bill.wxss */
+.list{
+  margin-top: 30rpx;
+  display: flex;
+}
+
+.num{
+  margin-left: 20rpx;
+}

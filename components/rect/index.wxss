@@ -1,0 +1,13 @@
+.rect{
+  position: absolute;
+  width: 100px;
+  height: 51px;
+  top: 0;
+  left: 0;
+  border: 1px solid rgb(179, 240, 232);
+  color: white;
+  transform-origin:(left,top);
+}
+.active{
+  background: rgb(231, 127, 127);
+}
